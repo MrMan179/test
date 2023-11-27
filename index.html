@@ -14,12 +14,16 @@
             function changeImage(id, newImage) {
                 document.getElementById(id).src=newImage;
             }
+            function changeLink(id, newLink) {
+                document.getElementById(id).href=newLink;
+            }
             function changeToInstructions() {
                 changeValue('title', "Scoby Instructions");
                 changeValue('1', "Looking after your scoby can look quite overwhelming, but, if you know how to do it, it is actually relatively simple.");
                 changeValue('2', "The equipment you will need for looking after your scoby:</br>1. 3 bottles, preferably glass</br>2. A funnel</br>3. A scoby, of course!");
                 changeValue('3', "Note: your scoby will reproduce to create baby scobies. You can give these to friends and family, keep them together with the mother scoby or give them their own set of bottles.");
                 changeValue('4', "How to look after your scoby:</br>1. When you receive your scoby, it will probably already be in a glass bottle. Make note of this day because it will be your scoby day.</br> 2. Every time it comes to this day, you need to tend to your scoby. You can learn how to do this form the link on the homepage.");
+                changeValue('link', "");
                 changeImage("image", "ourScobyImage.jpg");
             }
             function changeToIndex() {
@@ -28,6 +32,8 @@
                 changeValue('2', "");
                 changeValue('3', "");
                 changeValue('4', "");
+                changeValue('link', "");
+                changeLink("link", "https://www.bbcgoodfood.com/howto/guide/health-benefits-kombucha")
                 changeImage("image", "scobyImage.jpg");
             }
             function changeToScobyDay() {
@@ -36,14 +42,16 @@
                 changeValue('2', "<b>Warning:</b> you <i>must</i> drain the scoby drink throuroughly before drinking it");
                 changeValue('3', "How to make the scoby tea:</br>1. Boil 1 litre of water</br>2. Add 4 bags of green tea and leave to brew</br>3. After it has finished brewing, add 80g of sugar");
                 changeValue('4', "");
+                changeValue('link', "");
                 changeImage("image", "scobyBottlesImage.jpg");
             }
             function changeToHealth() {
                 changeValue('title', "Health benefits of Kombucha (scoby drink)");
-                changeValue('1', "Looking after your scoby can look quite overwhelming, but, if you know how to do it, it is actually relatively simple.");
-                changeValue('2', "The equipment you will need for looking after your scoby:</br>1. 3 bottles, preferably glass</br>2. A funnel</br>3. A scoby, of course!");
-                changeValue('3', "Note: your scoby will reproduce to create baby scobies. You can give these to friends and family, keep them together with the mother scoby or give them their own set of bottles.");
+                changeValue('1', "The drink that your scoby will produce will not only be tasty, it will also be very good for you.");
+                changeValue('2', "Here is a short paragraph on the health benefits or Kombucha:");
+                changeValue('3', "");
                 changeValue('4', "How to look after your scoby:</br>1. When you receive your scoby, it will probably already be in a glass bottle. Make note of this day because it will be your scoby day.</br> 2. Every time it comes to this day, you need to tend to your scoby. You can learn how to do this form the link on the homepage.");
+                changeValue('link', "Click here for more information!");
                 changeImage("image", "ourScobyImage.jpg");
             }
         </script>
@@ -58,6 +66,7 @@
         <p style="font-family:verdana" id="2"></p>
         <p style="font-family:verdana" id="3"></p>
         <p style="font-family:verdana" id="4"></p>
+        <a id="link" href="#"></a>
         <h2 class="a">Enjoy scobying!</h2>
         <img src="scobyImage.jpg" height="400" width="400" id="image"></img>
     </body>
